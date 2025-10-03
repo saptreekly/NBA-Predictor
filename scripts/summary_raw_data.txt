@@ -1,0 +1,401 @@
+--- TeamStatistics.csv ---
+
+Dimensions: 143758 rows, 48 columns
+
+Column Data Types:
+gameId                       int64
+gameDate                    object
+teamCity                    object
+teamName                    object
+teamId                       int64
+opponentTeamCity            object
+opponentTeamName            object
+opponentTeamId               int64
+home                         int64
+win                          int64
+teamScore                    int64
+opponentScore                int64
+assists                    float64
+blocks                     float64
+steals                     float64
+fieldGoalsAttempted        float64
+fieldGoalsMade             float64
+fieldGoalsPercentage       float64
+threePointersAttempted     float64
+threePointersMade          float64
+threePointersPercentage    float64
+freeThrowsAttempted        float64
+freeThrowsMade             float64
+freeThrowsPercentage       float64
+reboundsDefensive          float64
+reboundsOffensive          float64
+reboundsTotal              float64
+foulsPersonal              float64
+turnovers                  float64
+plusMinusPoints            float64
+numMinutes                 float64
+q1Points                   float64
+q2Points                   float64
+q3Points                   float64
+q4Points                   float64
+benchPoints                float64
+biggestLead                float64
+biggestScoringRun          float64
+leadChanges                float64
+pointsFastBreak            float64
+pointsFromTurnovers        float64
+pointsInThePaint           float64
+pointsSecondChance         float64
+timesTied                  float64
+timeoutsRemaining          float64
+seasonWins                 float64
+seasonLosses               float64
+coachId                    float64
+dtype: object
+
+Head:
+     gameId             gameDate       teamCity teamName      teamId  \
+0  42400407  2025-06-22 20:00:00        Indiana   Pacers  1610612754   
+1  42400407  2025-06-22 20:00:00  Oklahoma City  Thunder  1610612760   
+2  42400406  2025-06-19 20:30:00        Indiana   Pacers  1610612754   
+3  42400406  2025-06-19 20:30:00  Oklahoma City  Thunder  1610612760   
+4  42400405  2025-06-16 20:30:00        Indiana   Pacers  1610612754   
+
+  opponentTeamCity opponentTeamName  opponentTeamId  home  win  teamScore  \
+0    Oklahoma City          Thunder      1610612760     0    0         91   
+1          Indiana           Pacers      1610612754     1    1        103   
+2    Oklahoma City          Thunder      1610612760     1    1        108   
+3          Indiana           Pacers      1610612754     0    0         91   
+4    Oklahoma City          Thunder      1610612760     0    0        109   
+
+   opponentScore  assists  blocks  steals  fieldGoalsAttempted  \
+0            103     17.0     4.0     6.0                 70.0   
+1             91     20.0     8.0    14.0                 87.0   
+2             91     23.0     5.0    16.0                 92.0   
+3            108     14.0     4.0     4.0                 74.0   
+4            120     23.0     4.0     9.0                 82.0   
+
+   fieldGoalsMade  fieldGoalsPercentage  threePointersAttempted  \
+0            29.0                 0.414                    28.0   
+1            35.0                 0.402                    40.0   
+2            38.0                 0.413                    42.0   
+3            31.0                 0.419                    30.0   
+4            37.0                 0.451                    30.0   
+
+   threePointersMade  threePointersPercentage  freeThrowsAttempted  \
+0               11.0                    0.393                 29.0   
+1               11.0                    0.275                 31.0   
+2               15.0                    0.357                 25.0   
+3                8.0                    0.267                 26.0   
+4               11.0                    0.367                 30.0   
+
+   freeThrowsMade  freeThrowsPercentage  reboundsDefensive  reboundsOffensive  \
+0            22.0                 0.759               33.0               12.0   
+1            22.0                 0.710               27.0               13.0   
+2            17.0                 0.680               35.0               11.0   
+3            21.0                 0.808               37.0                4.0   
+4            24.0                 0.800               32.0               18.0   
+
+   reboundsTotal  foulsPersonal  turnovers  plusMinusPoints  numMinutes  \
+0           45.0           24.0       21.0            -12.0       240.0   
+1           40.0           23.0        7.0             12.0       240.0   
+2           46.0           17.0       10.0             17.0       240.0   
+3           41.0           20.0       21.0            -17.0       240.0   
+4           50.0           25.0       22.0            -11.0       240.0   
+
+   q1Points  q2Points  q3Points  q4Points  benchPoints  biggestLead  \
+0      22.0      26.0      20.0      23.0         42.0          5.0   
+1      25.0      22.0      34.0      22.0         20.0         22.0   
+2      28.0      36.0      26.0      18.0         48.0         31.0   
+3      25.0      17.0      18.0      31.0         37.0          8.0   
+4      22.0      23.0      34.0      30.0         43.0          3.0   
+
+   biggestScoringRun  leadChanges  pointsFastBreak  pointsFromTurnovers  \
+0                7.0         11.0              7.0                 10.0   
+1               13.0         11.0              9.0                 32.0   
+2               12.0          1.0             22.0                 19.0   
+3                8.0          1.0             11.0                 13.0   
+4                6.0          6.0             13.0                  9.0   
+
+   pointsInThePaint  pointsSecondChance  timesTied  timeoutsRemaining  \
+0              26.0                15.0       10.0                0.0   
+1              40.0                22.0       10.0                0.0   
+2              30.0                14.0        1.0                1.0   
+3              40.0                 6.0        1.0                1.0   
+4              48.0                21.0        2.0                0.0   
+
+   seasonWins  seasonLosses  coachId  
+0         3.0           4.0      NaN  
+1         4.0           3.0      NaN  
+2         3.0           3.0      NaN  
+3         3.0           3.0      NaN  
+4         2.0           3.0      NaN  
+
+--- LeagueSchedule24_25.csv ---
+
+Dimensions: 1408 rows, 15 columns
+
+Column Data Types:
+gameId                int64
+gameDateTimeEst      object
+gameDay              object
+arenaCity            object
+arenaState           object
+arenaName            object
+gameLabel            object
+gameSubLabel         object
+gameSubtype          object
+gameSequence          int64
+seriesGameNumber    float64
+seriesText           object
+weekNumber            int64
+hometeamId            int64
+awayteamId            int64
+dtype: object
+
+Head:
+     gameId            gameDateTimeEst gameDay       arenaCity arenaState  \
+0  12400001  2024-10-04 12:00:00+00:00     Fri       Abu Dhabi        NaN   
+1  12400002  2024-10-04 21:00:00+00:00     Fri  Salt Lake City         UT   
+2  12400003  2024-10-04 22:30:00+00:00     Fri     Palm Desert         CA   
+3  12400004  2024-10-05 19:00:00+00:00     Sat        Honolulu         HI   
+4  12400005  2024-10-06 10:00:00+00:00     Sun       Abu Dhabi        NaN   
+
+             arenaName  gameLabel        gameSubLabel   gameSubtype  \
+0         Etihad Arena  Preseason  NBA Abu Dhabi Game  Global Games   
+1         Delta Center  Preseason                 NaN           NaN   
+2       Acrisure Arena  Preseason                 NaN           NaN   
+3  Stan Sheriff Center  Preseason                 NaN           NaN   
+4         Etihad Arena  Preseason  NBA Abu Dhabi Game  Global Games   
+
+   gameSequence  seriesGameNumber    seriesText  weekNumber  hometeamId  \
+0             1               NaN  Neutral Site           0  1610612743   
+1             2               NaN           NaN           0  1610612762   
+2             3               NaN           NaN           0  1610612747   
+3             1               NaN           NaN           0  1610612746   
+4             1               NaN  Neutral Site           0  1610612738   
+
+   awayteamId  
+0  1610612738  
+1       15020  
+2  1610612750  
+3  1610612744  
+4  1610612743  
+
+--- PlayerStatistics.csv ---
+
+Dimensions: 1627438 rows, 35 columns
+
+Column Data Types:
+firstName                   object
+lastName                    object
+personId                     int64
+gameId                       int64
+gameDate                    object
+playerteamCity              object
+playerteamName              object
+opponentteamCity            object
+opponentteamName            object
+gameType                    object
+gameLabel                   object
+gameSubLabel                object
+seriesGameNumber           float64
+win                          int64
+home                         int64
+numMinutes                 float64
+points                     float64
+assists                    float64
+blocks                     float64
+steals                     float64
+fieldGoalsAttempted        float64
+fieldGoalsMade             float64
+fieldGoalsPercentage       float64
+threePointersAttempted     float64
+threePointersMade          float64
+threePointersPercentage    float64
+freeThrowsAttempted        float64
+freeThrowsMade             float64
+freeThrowsPercentage       float64
+reboundsDefensive          float64
+reboundsOffensive          float64
+reboundsTotal              float64
+foulsPersonal              float64
+turnovers                  float64
+plusMinusPoints            float64
+dtype: object
+
+Head:
+  firstName   lastName  personId    gameId             gameDate  \
+0     James    Johnson    201949  42400407  2025-06-22 20:00:00   
+1      T.J.  McConnell    204456  42400407  2025-06-22 20:00:00   
+2     Myles     Turner   1626167  42400407  2025-06-22 20:00:00   
+3    Pascal     Siakam   1627783  42400407  2025-06-22 20:00:00   
+4      Alex     Caruso   1627936  42400407  2025-06-22 20:00:00   
+
+  playerteamCity playerteamName opponentteamCity opponentteamName  gameType  \
+0        Indiana         Pacers    Oklahoma City          Thunder  Playoffs   
+1        Indiana         Pacers    Oklahoma City          Thunder  Playoffs   
+2        Indiana         Pacers    Oklahoma City          Thunder  Playoffs   
+3        Indiana         Pacers    Oklahoma City          Thunder  Playoffs   
+4  Oklahoma City        Thunder          Indiana           Pacers  Playoffs   
+
+    gameLabel gameSubLabel  seriesGameNumber  win  home  numMinutes  points  \
+0  NBA Finals       Game 7               7.0    0     0         NaN     0.0   
+1  NBA Finals       Game 7               7.0    0     0       28.05    16.0   
+2  NBA Finals       Game 7               7.0    0     0       23.49     6.0   
+3  NBA Finals       Game 7               7.0    0     0       36.55    16.0   
+4  NBA Finals       Game 7               7.0    1     1       32.25    10.0   
+
+   assists  blocks  steals  fieldGoalsAttempted  fieldGoalsMade  \
+0      0.0     0.0     0.0                  0.0             0.0   
+1      3.0     1.0     1.0                 13.0             8.0   
+2      1.0     0.0     0.0                  4.0             2.0   
+3      2.0     1.0     1.0                 13.0             5.0   
+4      0.0     1.0     3.0                 10.0             4.0   
+
+   fieldGoalsPercentage  threePointersAttempted  threePointersMade  \
+0                 0.000                     0.0                0.0   
+1                 0.615                     0.0                0.0   
+2                 0.500                     3.0                1.0   
+3                 0.385                     5.0                2.0   
+4                 0.400                     5.0                2.0   
+
+   threePointersPercentage  freeThrowsAttempted  freeThrowsMade  \
+0                    0.000                  0.0             0.0   
+1                    0.000                  0.0             0.0   
+2                    0.333                  4.0             1.0   
+3                    0.400                  7.0             4.0   
+4                    0.400                  0.0             0.0   
+
+   freeThrowsPercentage  reboundsDefensive  reboundsOffensive  reboundsTotal  \
+0                 0.000                0.0                0.0            0.0   
+1                 0.000                6.0                0.0            6.0   
+2                 0.250                3.0                1.0            4.0   
+3                 0.571                3.0                1.0            4.0   
+4                 0.000                1.0                2.0            3.0   
+
+   foulsPersonal  turnovers  plusMinusPoints  
+0            0.0        0.0              0.0  
+1            2.0        7.0            -12.0  
+2            3.0        1.0            -12.0  
+3            2.0        1.0             -4.0  
+4            3.0        0.0              8.0  
+
+--- Players.csv ---
+
+Dimensions: 6533 rows, 14 columns
+
+Column Data Types:
+personId          int64
+firstName        object
+lastName         object
+birthdate        object
+lastAttended     object
+country          object
+height          float64
+bodyWeight      float64
+guard            object
+forward          object
+center           object
+draftYear       float64
+draftRound      float64
+draftNumber     float64
+dtype: object
+
+Head:
+   personId firstName lastName   birthdate        lastAttended country  \
+0         2     Byron    Scott  1961-03-28       Arizona State     USA   
+1         3     Grant     Long  1966-03-12    Eastern Michigan     USA   
+2         7       Dan  Schayes  1959-05-10            Syracuse     USA   
+3         9    Sedale  Threatt  1961-09-10  West Virginia Tech     USA   
+4        12     Chris     King  1969-07-24         Wake Forest     USA   
+
+   height  bodyWeight  guard forward center  draftYear  draftRound  \
+0    76.0       205.0   True   False  False     1983.0         1.0   
+1    81.0         3.0  False   False  False     1988.0         2.0   
+2    83.0       260.0  False   False   True     1981.0         1.0   
+3    74.0       185.0   True   False  False     1983.0         6.0   
+4    80.0       215.0  False    True  False     1992.0         2.0   
+
+   draftNumber  
+0          4.0  
+1         33.0  
+2         13.0  
+3        139.0  
+4         45.0  
+
+--- TeamHistories.csv ---
+
+Dimensions: 140 rows, 7 columns
+
+Column Data Types:
+teamId               int64
+teamCity            object
+teamName            object
+teamAbbrev          object
+seasonFounded        int64
+seasonActiveTill     int64
+league              object
+dtype: object
+
+Head:
+       teamId    teamCity    teamName teamAbbrev  seasonFounded  \
+0  1610612737  Tri-Cities  Blackhawks      TRI             1946   
+1  1610612737   Milwaukee       Hawks      MIL             1951   
+2  1610612737   St. Louis       Hawks      STL             1955   
+3  1610612737     Atlanta       Hawks      ATL             1968   
+4  1610612738      Boston     Celtics      BOS             1946   
+
+   seasonActiveTill league  
+0              1948    BAA  
+1              1954    NBA  
+2              1967    NBA  
+3              2100    NBA  
+4              1948    BAA  
+
+--- Games.csv ---
+
+Dimensions: 71879 rows, 17 columns
+
+Column Data Types:
+gameId                int64
+gameDate             object
+hometeamCity         object
+hometeamName         object
+hometeamId            int64
+awayteamCity         object
+awayteamName         object
+awayteamId            int64
+homeScore             int64
+awayScore             int64
+winner                int64
+gameType             object
+attendance          float64
+arenaId               int64
+gameLabel            object
+gameSubLabel         object
+seriesGameNumber    float64
+dtype: object
+
+Head:
+     gameId             gameDate   hometeamCity hometeamName  hometeamId  \
+0  42400407  2025-06-22 20:00:00  Oklahoma City      Thunder  1610612760   
+1  42400406  2025-06-19 20:30:00        Indiana       Pacers  1610612754   
+2  42400405  2025-06-16 20:30:00  Oklahoma City      Thunder  1610612760   
+3  42400404  2025-06-13 20:30:00        Indiana       Pacers  1610612754   
+4  42400403  2025-06-11 20:30:00        Indiana       Pacers  1610612754   
+
+    awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  \
+0        Indiana       Pacers  1610612754        103         91  1610612760   
+1  Oklahoma City      Thunder  1610612760        108         91  1610612754   
+2        Indiana       Pacers  1610612754        120        109  1610612760   
+3  Oklahoma City      Thunder  1610612760        104        111  1610612760   
+4  Oklahoma City      Thunder  1610612760        116        107  1610612754   
+
+   gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber  
+0  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0  
+1  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0  
+2  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0  
+3  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0  
+4  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0  
+

@@ -1,0 +1,417 @@
+Summary for: games_processed.csv
+================================
+
+Column Names:
+- gameId
+- gameDate
+- hometeamCity
+- hometeamName
+- hometeamId
+- awayteamCity
+- awayteamName
+- awayteamId
+- homeScore
+- awayScore
+- winner
+- gameType
+- attendance
+- arenaId
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+
+First 5 Rows:
+     gameId             gameDate   hometeamCity hometeamName  hometeamId   awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber
+0  42400407  2025-06-22 20:00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        103         91  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0
+1  42400406  2025-06-19 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        108         91  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0
+2  42400405  2025-06-16 20:30:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        120        109  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0
+3  42400404  2025-06-13 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        104        111  1610612760  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0
+4  42400403  2025-06-11 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        116        107  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0
+
+Last 5 Rows:
+         gameId             gameDate  hometeamCity hometeamName  hometeamId  awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner        gameType  attendance  arenaId gameLabel gameSubLabel  seriesGameNumber
+71874  24600083  1946-12-08 19:00:00      New York       Knicks  1610612752        Boston      Celtics  1610612738         62         44  1610612752  Regular Season         NaN        0       NaN          NaN               NaN
+71875  24600078  1946-12-07 19:00:00        Boston      Celtics  1610612738      New York       Knicks  1610612752         65         90  1610612752  Regular Season         NaN        0       NaN          NaN               NaN
+71876  24600076  1946-12-05 19:00:00  Philadelphia     Warriors  1610612744      New York       Knicks  1610612752         62         51  1610612744  Regular Season         NaN        0       NaN          NaN               NaN
+71877  24600063  1946-11-30 19:00:00      New York       Knicks  1610612752  Philadelphia     Warriors  1610612744         64         60  1610612752  Regular Season         NaN        0       NaN          NaN               NaN
+71878  24600052  1946-11-26 19:00:00  Philadelphia     Warriors  1610612744        Boston      Celtics  1610612738         66         54  1610612744  Regular Season         NaN        0       NaN          NaN               NaN
+
+Summary for: games_processed.parquet
+====================================
+
+Column Names:
+- gameId
+- gameDate
+- hometeamCity
+- hometeamName
+- hometeamId
+- awayteamCity
+- awayteamName
+- awayteamId
+- homeScore
+- awayScore
+- winner
+- gameType
+- attendance
+- arenaId
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- hometeamId_canonical
+- awayteamId_canonical
+
+First 5 Rows:
+     gameId                  gameDate   hometeamCity hometeamName  hometeamId   awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber  hometeamId_canonical  awayteamId_canonical
+0  42400407 2025-06-22 20:00:00+00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        103         91  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0            1610612760            1610612754
+1  42400406 2025-06-19 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        108         91  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0            1610612754            1610612760
+2  42400405 2025-06-16 20:30:00+00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        120        109  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0            1610612760            1610612754
+3  42400404 2025-06-13 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        104        111  1610612760  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0            1610612754            1610612760
+4  42400403 2025-06-11 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        116        107  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0            1610612754            1610612760
+
+Last 5 Rows:
+         gameId                  gameDate  hometeamCity hometeamName  hometeamId  awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner        gameType  attendance  arenaId gameLabel gameSubLabel  seriesGameNumber  hometeamId_canonical  awayteamId_canonical
+71874  24600083 1946-12-08 19:00:00+00:00      New York       Knicks  1610612752        Boston      Celtics  1610612738         62         44  1610612752  Regular Season         NaN        0      None         None               NaN            1610612752            1610612738
+71875  24600078 1946-12-07 19:00:00+00:00        Boston      Celtics  1610612738      New York       Knicks  1610612752         65         90  1610612752  Regular Season         NaN        0      None         None               NaN            1610612738            1610612752
+71876  24600076 1946-12-05 19:00:00+00:00  Philadelphia     Warriors  1610612744      New York       Knicks  1610612752         62         51  1610612744  Regular Season         NaN        0      None         None               NaN            1610612744            1610612752
+71877  24600063 1946-11-30 19:00:00+00:00      New York       Knicks  1610612752  Philadelphia     Warriors  1610612744         64         60  1610612752  Regular Season         NaN        0      None         None               NaN            1610612752            1610612744
+71878  24600052 1946-11-26 19:00:00+00:00  Philadelphia     Warriors  1610612744        Boston      Celtics  1610612738         66         54  1610612744  Regular Season         NaN        0      None         None               NaN            1610612744            1610612738
+
+Summary for: games_with_all_features.csv
+========================================
+
+Column Names:
+- gameId
+- gameDate
+- hometeamCity
+- hometeamName
+- hometeamId
+- awayteamCity
+- awayteamName
+- awayteamId
+- homeScore
+- awayScore
+- winner
+- gameType
+- attendance
+- arenaId
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- points_home_agg
+- assists_home_agg
+- blocks_home_agg
+- steals_home_agg
+- reboundsTotal_home_agg
+- fieldGoalsMade_home_agg
+- fieldGoalsAttempted_home_agg
+- threePointersMade_home_agg
+- threePointersAttempted_home_agg
+- freeThrowsMade_home_agg
+- freeThrowsAttempted_home_agg
+- turnovers_home_agg
+- foulsPersonal_home_agg
+- plusMinusPoints_home_agg
+- points_away_agg
+- assists_away_agg
+- blocks_away_agg
+- steals_away_agg
+- reboundsTotal_away_agg
+- fieldGoalsMade_away_agg
+- fieldGoalsAttempted_away_agg
+- threePointersMade_away_agg
+- threePointersAttempted_away_agg
+- freeThrowsMade_away_agg
+- freeThrowsAttempted_away_agg
+- turnovers_away_agg
+- foulsPersonal_away_agg
+- plusMinusPoints_away_agg
+- avg_team_points_scored_last_5
+- avg_team_points_allowed_last_5
+- avg_team_points_scored_last_10
+- avg_team_points_allowed_last_10
+- days_since_last_game
+- win_streak
+- avg_team_points_scored_last_5_away_lag
+- avg_team_points_allowed_last_5_away_lag
+- avg_team_points_scored_last_10_away_lag
+- avg_team_points_allowed_last_10_away_lag
+- days_since_last_game_away_lag
+- win_streak_away_lag
+
+First 5 Rows:
+     gameId             gameDate  hometeamCity hometeamName  hometeamId  awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner        gameType  attendance  arenaId gameLabel gameSubLabel  seriesGameNumber  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg  avg_team_points_scored_last_5  avg_team_points_allowed_last_5  avg_team_points_scored_last_10  avg_team_points_allowed_last_10  days_since_last_game  win_streak  avg_team_points_scored_last_5_away_lag  avg_team_points_allowed_last_5_away_lag  avg_team_points_scored_last_10_away_lag  avg_team_points_allowed_last_10_away_lag  days_since_last_game_away_lag  win_streak_away_lag
+0  24600052  1946-11-26 19:00:00  Philadelphia     Warriors  1610612744        Boston      Celtics  1610612738         66         54  1610612744  Regular Season         NaN        0       NaN          NaN               NaN             66.0               0.0              0.0              0.0                     0.0                     26.0                           0.0                         0.0                              0.0                     14.0                           0.0                 0.0                     0.0                       0.0             66.0               0.0              0.0              0.0                     0.0                     25.0                           0.0                         0.0                              0.0                     16.0                           0.0                 0.0                     0.0                       0.0                            NaN                             NaN                             NaN                              NaN                   0.0           1                                     NaN                                      NaN                                      NaN                                       NaN                            0.0                    0
+1  24600063  1946-11-30 19:00:00      New York       Knicks  1610612752  Philadelphia     Warriors  1610612744         64         60  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             64.0               0.0              0.0              0.0                     0.0                     26.0                           0.0                         0.0                              0.0                     12.0                           0.0                 0.0                     0.0                       0.0             60.0               0.0              0.0              0.0                     0.0                     22.0                           0.0                         0.0                              0.0                     16.0                           0.0                 0.0                     0.0                       0.0                            NaN                             NaN                             NaN                              NaN                   0.0           1                                     NaN                                      NaN                                      NaN                                       NaN                            4.0                    0
+2  24600076  1946-12-05 19:00:00  Philadelphia     Warriors  1610612744      New York       Knicks  1610612752         62         51  1610612744  Regular Season         NaN        0       NaN          NaN               NaN             62.0               0.0              0.0              0.0                     0.0                     22.0                           0.0                         0.0                              0.0                     18.0                           0.0                 0.0                     0.0                       0.0             51.0               0.0              0.0              0.0                     0.0                     21.0                           0.0                         0.0                              0.0                      9.0                           0.0                 0.0                     0.0                       0.0                            NaN                             NaN                             NaN                              NaN                   5.0           1                                     NaN                                      NaN                                      NaN                                       NaN                            5.0                    0
+3  24600078  1946-12-07 19:00:00        Boston      Celtics  1610612738      New York       Knicks  1610612752         65         90  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             65.0               0.0              0.0              0.0                     0.0                     25.0                           1.0                         0.0                              0.0                     15.0                           0.0                 0.0                     1.0                       0.0             94.0               0.0              0.0              0.0                     0.0                     40.0                           0.0                         0.0                              0.0                     14.0                           0.0                 0.0                     0.0                       0.0                            NaN                             NaN                             NaN                              NaN                  11.0           0                                     NaN                                      NaN                                      NaN                                       NaN                            2.0                    1
+4  24600083  1946-12-08 19:00:00      New York       Knicks  1610612752        Boston      Celtics  1610612738         62         44  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             62.0               0.0              0.0              0.0                     0.0                     25.0                           0.0                         0.0                              0.0                     12.0                          19.0                 0.0                    15.0                       0.0             44.0               0.0              0.0              0.0                     0.0                     18.0                           0.0                         0.0                              0.0                      8.0                          16.0                 0.0                    14.0                       0.0                            NaN                             NaN                             NaN                              NaN                   1.0           2                                     NaN                                      NaN                                      NaN                                       NaN                            1.0                    0
+
+Last 5 Rows:
+         gameId             gameDate   hometeamCity hometeamName  hometeamId   awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg  avg_team_points_scored_last_5  avg_team_points_allowed_last_5  avg_team_points_scored_last_10  avg_team_points_allowed_last_10  days_since_last_game  win_streak  avg_team_points_scored_last_5_away_lag  avg_team_points_allowed_last_5_away_lag  avg_team_points_scored_last_10_away_lag  avg_team_points_allowed_last_10_away_lag  days_since_last_game_away_lag  win_streak_away_lag
+71874  42400403  2025-06-11 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        116        107  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0            116.0              24.0             11.0             13.0                    36.0                     44.0                          85.0                         9.0                             27.0                     19.0                          22.0                13.0                    24.0                      45.0            107.0              16.0              4.0              6.0                    42.0                     37.0                          79.0                        10.0                             22.0                     23.0                          30.0                17.0                    20.0                     -45.0                          113.4                           114.6                           116.2                            113.7                   3.0           1                                   117.2                                    116.2                                    116.2                                     108.9                            3.0                    0
+71875  42400404  2025-06-13 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        104        111  1610612760  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0            104.0              21.0              3.0             11.0                    33.0                     34.0                          80.0                        11.0                             36.0                     25.0                          33.0                15.0                    27.0                     -35.0            111.0              11.0              3.0             12.0                    43.0                     37.0                          78.0                         3.0                             16.0                     34.0                          38.0                13.0                    26.0                      35.0                          110.6                           111.8                           114.9                            113.5                   2.0           0                                   118.4                                    110.8                                    115.7                                     110.0                            2.0                    1
+71876  42400405  2025-06-16 20:30:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        120        109  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0            120.0              24.0             12.0             15.0                    45.0                     40.0                          94.0                        14.0                             32.0                     26.0                          32.0                11.0                    24.0                      55.0            109.0              23.0              4.0              9.0                    50.0                     37.0                          82.0                        11.0                             30.0                     24.0                          30.0                22.0                    25.0                     -55.0                          115.0                           106.4                           116.1                            108.5                   3.0           2                                   112.6                                    111.8                                    113.9                                     114.1                            3.0                    0
+71877  42400406  2025-06-19 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        108         91  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0            108.0              23.0              5.0             16.0                    46.0                     38.0                          92.0                        15.0                             42.0                     17.0                          25.0                10.0                    17.0                      85.0             91.0              14.0              4.0              4.0                    41.0                     31.0                          74.0                         8.0                             30.0                     21.0                          26.0                21.0                    20.0                     -85.0                          109.4                           114.2                           111.0                            112.6                   3.0           1                                   114.2                                    109.4                                    115.6                                     110.1                            3.0                    0
+71878  42400407  2025-06-22 20:00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        103         91  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0            103.0              20.0              8.0             14.0                    40.0                     35.0                          87.0                        11.0                             40.0                     22.0                          31.0                 7.0                    23.0                      60.0             91.0              17.0              4.0              6.0                    45.0                     29.0                          70.0                        11.0                             28.0                     22.0                          29.0                21.0                    24.0                     -60.0                          110.4                           108.8                           113.3                            112.1                   2.0           1                                   108.8                                    110.4                                    110.4                                     110.8                            2.0                    0
+
+Summary for: games_with_team_stats.csv
+======================================
+
+Column Names:
+- gameId
+- gameDate
+- hometeamCity
+- hometeamName
+- hometeamId
+- awayteamCity
+- awayteamName
+- awayteamId
+- homeScore
+- awayScore
+- winner
+- gameType
+- attendance
+- arenaId
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- points_home_agg
+- assists_home_agg
+- blocks_home_agg
+- steals_home_agg
+- reboundsTotal_home_agg
+- fieldGoalsMade_home_agg
+- fieldGoalsAttempted_home_agg
+- threePointersMade_home_agg
+- threePointersAttempted_home_agg
+- freeThrowsMade_home_agg
+- freeThrowsAttempted_home_agg
+- turnovers_home_agg
+- foulsPersonal_home_agg
+- plusMinusPoints_home_agg
+- points_away_agg
+- assists_away_agg
+- blocks_away_agg
+- steals_away_agg
+- reboundsTotal_away_agg
+- fieldGoalsMade_away_agg
+- fieldGoalsAttempted_away_agg
+- threePointersMade_away_agg
+- threePointersAttempted_away_agg
+- freeThrowsMade_away_agg
+- freeThrowsAttempted_away_agg
+- turnovers_away_agg
+- foulsPersonal_away_agg
+- plusMinusPoints_away_agg
+
+First 5 Rows:
+     gameId             gameDate   hometeamCity hometeamName  hometeamId   awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg
+0  42400407  2025-06-22 20:00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        103         91  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0            103.0              20.0              8.0             14.0                    40.0                     35.0                          87.0                        11.0                             40.0                     22.0                          31.0                 7.0                    23.0                      60.0             91.0              17.0              4.0              6.0                    45.0                     29.0                          70.0                        11.0                             28.0                     22.0                          29.0                21.0                    24.0                     -60.0
+1  42400406  2025-06-19 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        108         91  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0            108.0              23.0              5.0             16.0                    46.0                     38.0                          92.0                        15.0                             42.0                     17.0                          25.0                10.0                    17.0                      85.0             91.0              14.0              4.0              4.0                    41.0                     31.0                          74.0                         8.0                             30.0                     21.0                          26.0                21.0                    20.0                     -85.0
+2  42400405  2025-06-16 20:30:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        120        109  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0            120.0              24.0             12.0             15.0                    45.0                     40.0                          94.0                        14.0                             32.0                     26.0                          32.0                11.0                    24.0                      55.0            109.0              23.0              4.0              9.0                    50.0                     37.0                          82.0                        11.0                             30.0                     24.0                          30.0                22.0                    25.0                     -55.0
+3  42400404  2025-06-13 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        104        111  1610612760  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0            104.0              21.0              3.0             11.0                    33.0                     34.0                          80.0                        11.0                             36.0                     25.0                          33.0                15.0                    27.0                     -35.0            111.0              11.0              3.0             12.0                    43.0                     37.0                          78.0                         3.0                             16.0                     34.0                          38.0                13.0                    26.0                      35.0
+4  42400403  2025-06-11 20:30:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        116        107  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0            116.0              24.0             11.0             13.0                    36.0                     44.0                          85.0                         9.0                             27.0                     19.0                          22.0                13.0                    24.0                      45.0            107.0              16.0              4.0              6.0                    42.0                     37.0                          79.0                        10.0                             22.0                     23.0                          30.0                17.0                    20.0                     -45.0
+
+Last 5 Rows:
+         gameId             gameDate  hometeamCity hometeamName  hometeamId  awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner        gameType  attendance  arenaId gameLabel gameSubLabel  seriesGameNumber  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg
+71874  24600083  1946-12-08 19:00:00      New York       Knicks  1610612752        Boston      Celtics  1610612738         62         44  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             62.0               0.0              0.0              0.0                     0.0                     25.0                           0.0                         0.0                              0.0                     12.0                          19.0                 0.0                    15.0                       0.0             44.0               0.0              0.0              0.0                     0.0                     18.0                           0.0                         0.0                              0.0                      8.0                          16.0                 0.0                    14.0                       0.0
+71875  24600078  1946-12-07 19:00:00        Boston      Celtics  1610612738      New York       Knicks  1610612752         65         90  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             65.0               0.0              0.0              0.0                     0.0                     25.0                           1.0                         0.0                              0.0                     15.0                           0.0                 0.0                     1.0                       0.0             94.0               0.0              0.0              0.0                     0.0                     40.0                           0.0                         0.0                              0.0                     14.0                           0.0                 0.0                     0.0                       0.0
+71876  24600076  1946-12-05 19:00:00  Philadelphia     Warriors  1610612744      New York       Knicks  1610612752         62         51  1610612744  Regular Season         NaN        0       NaN          NaN               NaN             62.0               0.0              0.0              0.0                     0.0                     22.0                           0.0                         0.0                              0.0                     18.0                           0.0                 0.0                     0.0                       0.0             51.0               0.0              0.0              0.0                     0.0                     21.0                           0.0                         0.0                              0.0                      9.0                           0.0                 0.0                     0.0                       0.0
+71877  24600063  1946-11-30 19:00:00      New York       Knicks  1610612752  Philadelphia     Warriors  1610612744         64         60  1610612752  Regular Season         NaN        0       NaN          NaN               NaN             64.0               0.0              0.0              0.0                     0.0                     26.0                           0.0                         0.0                              0.0                     12.0                           0.0                 0.0                     0.0                       0.0             60.0               0.0              0.0              0.0                     0.0                     22.0                           0.0                         0.0                              0.0                     16.0                           0.0                 0.0                     0.0                       0.0
+71878  24600052  1946-11-26 19:00:00  Philadelphia     Warriors  1610612744        Boston      Celtics  1610612738         66         54  1610612744  Regular Season         NaN        0       NaN          NaN               NaN             66.0               0.0              0.0              0.0                     0.0                     26.0                           0.0                         0.0                              0.0                     14.0                           0.0                 0.0                     0.0                       0.0             66.0               0.0              0.0              0.0                     0.0                     25.0                           0.0                         0.0                              0.0                     16.0                           0.0                 0.0                     0.0                       0.0
+
+Summary for: games_with_team_stats.parquet
+==========================================
+
+Column Names:
+- gameId
+- gameDate
+- hometeamCity
+- hometeamName
+- hometeamId
+- awayteamCity
+- awayteamName
+- awayteamId
+- homeScore
+- awayScore
+- winner
+- gameType
+- attendance
+- arenaId
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- hometeamId_canonical
+- awayteamId_canonical
+- home_coach_rigidity_score
+- away_coach_rigidity_score
+- home_bench_scorer_finisher_points
+- away_bench_scorer_finisher_points
+- home_injury_impact_multiplier
+- away_injury_impact_multiplier
+- score_differential
+- points_home_agg
+- assists_home_agg
+- blocks_home_agg
+- steals_home_agg
+- reboundsTotal_home_agg
+- fieldGoalsMade_home_agg
+- fieldGoalsAttempted_home_agg
+- threePointersMade_home_agg
+- threePointersAttempted_home_agg
+- freeThrowsMade_home_agg
+- freeThrowsAttempted_home_agg
+- turnovers_home_agg
+- foulsPersonal_home_agg
+- plusMinusPoints_home_agg
+- points_away_agg
+- assists_away_agg
+- blocks_away_agg
+- steals_away_agg
+- reboundsTotal_away_agg
+- fieldGoalsMade_away_agg
+- fieldGoalsAttempted_away_agg
+- threePointersMade_away_agg
+- threePointersAttempted_away_agg
+- freeThrowsMade_away_agg
+- freeThrowsAttempted_away_agg
+- turnovers_away_agg
+- foulsPersonal_away_agg
+- plusMinusPoints_away_agg
+- home_clutch_win_rate
+- away_clutch_win_rate
+- home_collapse_x_opponent_closing_strength
+- away_collapse_x_opponent_closing_strength
+- crowd_intensity
+
+First 5 Rows:
+     gameId                  gameDate   hometeamCity hometeamName  hometeamId   awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner  gameType  attendance  arenaId   gameLabel gameSubLabel  seriesGameNumber  hometeamId_canonical  awayteamId_canonical  home_coach_rigidity_score  away_coach_rigidity_score  home_bench_scorer_finisher_points  away_bench_scorer_finisher_points  home_injury_impact_multiplier  away_injury_impact_multiplier  score_differential  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg  home_clutch_win_rate  away_clutch_win_rate  home_collapse_x_opponent_closing_strength  away_collapse_x_opponent_closing_strength  crowd_intensity
+0  42400407 2025-06-22 20:00:00+00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        103         91  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 7               7.0            1610612760            1610612754                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  12              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.503532              0.480974                                   0.238788                                   0.261346                0
+1  42400406 2025-06-19 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        108         91  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 6               6.0            1610612754            1610612760                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  17              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.480974              0.503532                                   0.261346                                   0.238788                0
+2  42400405 2025-06-16 20:30:00+00:00  Oklahoma City      Thunder  1610612760        Indiana       Pacers  1610612754        120        109  1610612760  Playoffs     18203.0  1000052  NBA Finals       Game 5               5.0            1610612760            1610612754                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  11              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.503532              0.480974                                   0.238788                                   0.261346                0
+3  42400404 2025-06-13 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        104        111  1610612760  Playoffs     17274.0  1000063  NBA Finals       Game 4               4.0            1610612754            1610612760                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                   7              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.480974              0.503532                                   0.261346                                   0.238788                0
+4  42400403 2025-06-11 20:30:00+00:00        Indiana       Pacers  1610612754  Oklahoma City      Thunder  1610612760        116        107  1610612754  Playoffs     17274.0  1000063  NBA Finals       Game 3               3.0            1610612754            1610612760                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                   9              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.480974              0.503532                                   0.261346                                   0.238788                0
+
+Last 5 Rows:
+         gameId                  gameDate  hometeamCity hometeamName  hometeamId  awayteamCity awayteamName  awayteamId  homeScore  awayScore      winner        gameType  attendance  arenaId gameLabel gameSubLabel  seriesGameNumber  hometeamId_canonical  awayteamId_canonical  home_coach_rigidity_score  away_coach_rigidity_score  home_bench_scorer_finisher_points  away_bench_scorer_finisher_points  home_injury_impact_multiplier  away_injury_impact_multiplier  score_differential  points_home_agg  assists_home_agg  blocks_home_agg  steals_home_agg  reboundsTotal_home_agg  fieldGoalsMade_home_agg  fieldGoalsAttempted_home_agg  threePointersMade_home_agg  threePointersAttempted_home_agg  freeThrowsMade_home_agg  freeThrowsAttempted_home_agg  turnovers_home_agg  foulsPersonal_home_agg  plusMinusPoints_home_agg  points_away_agg  assists_away_agg  blocks_away_agg  steals_away_agg  reboundsTotal_away_agg  fieldGoalsMade_away_agg  fieldGoalsAttempted_away_agg  threePointersMade_away_agg  threePointersAttempted_away_agg  freeThrowsMade_away_agg  freeThrowsAttempted_away_agg  turnovers_away_agg  foulsPersonal_away_agg  plusMinusPoints_away_agg  home_clutch_win_rate  away_clutch_win_rate  home_collapse_x_opponent_closing_strength  away_collapse_x_opponent_closing_strength  crowd_intensity
+71874  24600083 1946-12-08 19:00:00+00:00      New York       Knicks  1610612752        Boston      Celtics  1610612738         62         44  1610612752  Regular Season         NaN        0      None         None               NaN            1610612752            1610612738                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  18              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.501957              0.540236                                   0.269061                                   0.230782                0
+71875  24600078 1946-12-07 19:00:00+00:00        Boston      Celtics  1610612738      New York       Knicks  1610612752         65         90  1610612752  Regular Season         NaN        0      None         None               NaN            1610612738            1610612752                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  25              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.540236              0.501957                                   0.230782                                   0.269061                0
+71876  24600076 1946-12-05 19:00:00+00:00  Philadelphia     Warriors  1610612744      New York       Knicks  1610612752         62         51  1610612744  Regular Season         NaN        0      None         None               NaN            1610612744            1610612752                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  11              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.480211              0.501957                                   0.260912                                   0.239166                0
+71877  24600063 1946-11-30 19:00:00+00:00      New York       Knicks  1610612752  Philadelphia     Warriors  1610612744         64         60  1610612752  Regular Season         NaN        0      None         None               NaN            1610612752            1610612744                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                   4              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.501957              0.480211                                   0.239166                                   0.260912                0
+71878  24600052 1946-11-26 19:00:00+00:00  Philadelphia     Warriors  1610612744        Boston      Celtics  1610612738         66         54  1610612744  Regular Season         NaN        0      None         None               NaN            1610612744            1610612738                        0.0                        0.0                                0.0                                0.0                            1.0                            1.0                  12              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              NaN               NaN              NaN              NaN                     NaN                      NaN                           NaN                         NaN                              NaN                      NaN                           NaN                 NaN                     NaN                       NaN              0.480211              0.540236                                   0.280808                                   0.220784                0
+
+Summary for: player_stats_processed.csv
+=======================================
+
+Column Names:
+- firstName
+- lastName
+- personId
+- gameId
+- gameDate
+- playerteamCity
+- playerteamName
+- opponentteamCity
+- opponentteamName
+- gameType
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- win
+- home
+- numMinutes
+- points
+- assists
+- blocks
+- steals
+- fieldGoalsAttempted
+- fieldGoalsMade
+- fieldGoalsPercentage
+- threePointersAttempted
+- threePointersMade
+- threePointersPercentage
+- freeThrowsAttempted
+- freeThrowsMade
+- freeThrowsPercentage
+- reboundsDefensive
+- reboundsOffensive
+- reboundsTotal
+- foulsPersonal
+- turnovers
+- plusMinusPoints
+
+First 5 Rows:
+  firstName   lastName  personId    gameId             gameDate playerteamCity playerteamName opponentteamCity opponentteamName  gameType   gameLabel gameSubLabel  seriesGameNumber  win  home  numMinutes  points  assists  blocks  steals  fieldGoalsAttempted  fieldGoalsMade  fieldGoalsPercentage  threePointersAttempted  threePointersMade  threePointersPercentage  freeThrowsAttempted  freeThrowsMade  freeThrowsPercentage  reboundsDefensive  reboundsOffensive  reboundsTotal  foulsPersonal  turnovers  plusMinusPoints
+0     James    Johnson    201949  42400407  2025-06-22 20:00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0        0.00     0.0      0.0     0.0     0.0                  0.0             0.0                 0.000                     0.0                0.0                    0.000                  0.0             0.0                 0.000                0.0                0.0            0.0            0.0        0.0              0.0
+1      T.J.  McConnell    204456  42400407  2025-06-22 20:00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       28.05    16.0      3.0     1.0     1.0                 13.0             8.0                 0.615                     0.0                0.0                    0.000                  0.0             0.0                 0.000                6.0                0.0            6.0            2.0        7.0            -12.0
+2     Myles     Turner   1626167  42400407  2025-06-22 20:00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       23.49     6.0      1.0     0.0     0.0                  4.0             2.0                 0.500                     3.0                1.0                    0.333                  4.0             1.0                 0.250                3.0                1.0            4.0            3.0        1.0            -12.0
+3    Pascal     Siakam   1627783  42400407  2025-06-22 20:00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       36.55    16.0      2.0     1.0     1.0                 13.0             5.0                 0.385                     5.0                2.0                    0.400                  7.0             4.0                 0.571                3.0                1.0            4.0            2.0        1.0             -4.0
+4      Alex     Caruso   1627936  42400407  2025-06-22 20:00:00  Oklahoma City        Thunder          Indiana           Pacers  Playoffs  NBA Finals       Game 7               7.0    1     1       32.25    10.0      0.0     1.0     3.0                 10.0             4.0                 0.400                     5.0                2.0                    0.400                  0.0             0.0                 0.000                1.0                2.0            3.0            3.0        0.0              8.0
+
+Last 5 Rows:
+        firstName   lastName  personId    gameId             gameDate playerteamCity playerteamName opponentteamCity opponentteamName        gameType gameLabel gameSubLabel  seriesGameNumber  win  home  numMinutes  points  assists  blocks  steals  fieldGoalsAttempted  fieldGoalsMade  fieldGoalsPercentage  threePointersAttempted  threePointersMade  threePointersPercentage  freeThrowsAttempted  freeThrowsMade  freeThrowsPercentage  reboundsDefensive  reboundsOffensive  reboundsTotal  foulsPersonal  turnovers  plusMinusPoints
+1627433      Fred  Sheffield     78131  24600052  1946-11-26 19:00:00   Philadelphia       Warriors           Boston          Celtics  Regular Season       NaN          NaN               NaN    1     1         0.0     1.0      0.0     0.0     0.0                  0.0             0.0                   0.0                     0.0                0.0                      0.0                  0.0             1.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0
+1627434    Connie    Simmons     78153  24600052  1946-11-26 19:00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season       NaN          NaN               NaN    0     0         0.0    15.0      0.0     0.0     0.0                  0.0             5.0                   0.0                     0.0                0.0                      0.0                  0.0             5.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0
+1627435    Johnny    Simmons     78154  24600052  1946-11-26 19:00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season       NaN          NaN               NaN    0     0         0.0    14.0      0.0     0.0     0.0                  0.0             6.0                   0.0                     0.0                0.0                      0.0                  0.0             2.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0
+1627436    Virgil     Vaughn     78411  24600052  1946-11-26 19:00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season       NaN          NaN               NaN    0     0         0.0     4.0      0.0     0.0     0.0                  0.0             1.0                   0.0                     0.0                0.0                      0.0                  0.0             2.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0
+1627437   Michael    Wallace     78443  24600052  1946-11-26 19:00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season       NaN          NaN               NaN    0     0         0.0     1.0      0.0     0.0     0.0                  0.0             0.0                   0.0                     0.0                0.0                      0.0                  0.0             1.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0
+
+Summary for: player_stats_processed.parquet
+===========================================
+
+Column Names:
+- firstName
+- lastName
+- personId
+- gameId
+- gameDate
+- playerteamCity
+- playerteamName
+- opponentteamCity
+- opponentteamName
+- gameType
+- gameLabel
+- gameSubLabel
+- seriesGameNumber
+- win
+- home
+- numMinutes
+- points
+- assists
+- blocks
+- steals
+- fieldGoalsAttempted
+- fieldGoalsMade
+- fieldGoalsPercentage
+- threePointersAttempted
+- threePointersMade
+- threePointersPercentage
+- freeThrowsAttempted
+- freeThrowsMade
+- freeThrowsPercentage
+- reboundsDefensive
+- reboundsOffensive
+- reboundsTotal
+- foulsPersonal
+- turnovers
+- plusMinusPoints
+- playerteamId
+- full_name
+- playerteamName_normalized
+
+First 5 Rows:
+  firstName   lastName  personId    gameId                  gameDate playerteamCity playerteamName opponentteamCity opponentteamName  gameType   gameLabel gameSubLabel  seriesGameNumber  win  home  numMinutes  points  assists  blocks  steals  fieldGoalsAttempted  fieldGoalsMade  fieldGoalsPercentage  threePointersAttempted  threePointersMade  threePointersPercentage  freeThrowsAttempted  freeThrowsMade  freeThrowsPercentage  reboundsDefensive  reboundsOffensive  reboundsTotal  foulsPersonal  turnovers  plusMinusPoints playerteamId full_name playerteamName_normalized
+0     James    Johnson    201949  42400407 2025-06-22 20:00:00+00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0        0.00     0.0      0.0     0.0     0.0                  0.0             0.0                 0.000                     0.0                0.0                    0.000                  0.0             0.0                 0.000                0.0                0.0            0.0            0.0        0.0              0.0         None      None                    PACERS
+1      T.J.  McConnell    204456  42400407 2025-06-22 20:00:00+00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       28.05    16.0      3.0     1.0     1.0                 13.0             8.0                 0.615                     0.0                0.0                    0.000                  0.0             0.0                 0.000                6.0                0.0            6.0            2.0        7.0            -12.0         None      None                    PACERS
+2     Myles     Turner   1626167  42400407 2025-06-22 20:00:00+00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       23.49     6.0      1.0     0.0     0.0                  4.0             2.0                 0.500                     3.0                1.0                    0.333                  4.0             1.0                 0.250                3.0                1.0            4.0            3.0        1.0            -12.0         None      None                    PACERS
+3    Pascal     Siakam   1627783  42400407 2025-06-22 20:00:00+00:00        Indiana         Pacers    Oklahoma City          Thunder  Playoffs  NBA Finals       Game 7               7.0    0     0       36.55    16.0      2.0     1.0     1.0                 13.0             5.0                 0.385                     5.0                2.0                    0.400                  7.0             4.0                 0.571                3.0                1.0            4.0            2.0        1.0             -4.0         None      None                    PACERS
+4      Alex     Caruso   1627936  42400407 2025-06-22 20:00:00+00:00  Oklahoma City        Thunder          Indiana           Pacers  Playoffs  NBA Finals       Game 7               7.0    1     1       32.25    10.0      0.0     1.0     3.0                 10.0             4.0                 0.400                     5.0                2.0                    0.400                  0.0             0.0                 0.000                1.0                2.0            3.0            3.0        0.0              8.0         None      None                   THUNDER
+
+Last 5 Rows:
+        firstName   lastName  personId    gameId                  gameDate playerteamCity playerteamName opponentteamCity opponentteamName        gameType gameLabel gameSubLabel  seriesGameNumber  win  home  numMinutes  points  assists  blocks  steals  fieldGoalsAttempted  fieldGoalsMade  fieldGoalsPercentage  threePointersAttempted  threePointersMade  threePointersPercentage  freeThrowsAttempted  freeThrowsMade  freeThrowsPercentage  reboundsDefensive  reboundsOffensive  reboundsTotal  foulsPersonal  turnovers  plusMinusPoints playerteamId full_name playerteamName_normalized
+1627433      Fred  Sheffield     78131  24600052 1946-11-26 19:00:00+00:00   Philadelphia       Warriors           Boston          Celtics  Regular Season      None         None               NaN    1     1         0.0     1.0      0.0     0.0     0.0                  0.0             0.0                   0.0                     0.0                0.0                      0.0                  0.0             1.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0         None      None                  WARRIORS
+1627434    Connie    Simmons     78153  24600052 1946-11-26 19:00:00+00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season      None         None               NaN    0     0         0.0    15.0      0.0     0.0     0.0                  0.0             5.0                   0.0                     0.0                0.0                      0.0                  0.0             5.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0         None      None                   CELTICS
+1627435    Johnny    Simmons     78154  24600052 1946-11-26 19:00:00+00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season      None         None               NaN    0     0         0.0    14.0      0.0     0.0     0.0                  0.0             6.0                   0.0                     0.0                0.0                      0.0                  0.0             2.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0         None      None                   CELTICS
+1627436    Virgil     Vaughn     78411  24600052 1946-11-26 19:00:00+00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season      None         None               NaN    0     0         0.0     4.0      0.0     0.0     0.0                  0.0             1.0                   0.0                     0.0                0.0                      0.0                  0.0             2.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0         None      None                   CELTICS
+1627437   Michael    Wallace     78443  24600052 1946-11-26 19:00:00+00:00         Boston        Celtics     Philadelphia         Warriors  Regular Season      None         None               NaN    0     0         0.0     1.0      0.0     0.0     0.0                  0.0             0.0                   0.0                     0.0                0.0                      0.0                  0.0             1.0                   0.0                0.0                0.0            0.0            0.0        0.0              0.0         None      None                   CELTICS
+
